@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐀𝐋𝐅𝐎𝐍𝐂𝐄 MK 𝗦𝗘𝗥𝗩𝗜𝗖𝗘𝗦</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container mx-auto px-4 py-6">
+        <!-- Header with Title and Shopping Icon -->
+        <div class="title-container flex items-center justify-between mb-6">
+            <div class="flex items-center">
+                <div class="shopping-icon">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                </div>
+                <div class="title-text">
+                    <span class="alfonce-text text-2xl font-bold">𝐀𝐋𝐅𝐎𝐍𝐂𝐄</span>
+                    <span class="services-text text-2xl font-bold">𝗦𝗘𝗥𝗩𝗜𝗖𝗘𝗦</span>
+                </div>
+            </div>
+            <button class="mobile-menu-button mx-3">
+                <i class="fas fa-bars"></i> Menu
+            </button>
+        </div>
+
+        <!-- Submenu/Navigation -->
+        <div class="submenu flex flex-wrap justify-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
+            <div class="tab" data-tab="home">
+                <i class="fas fa-home submenu-icon" style="color: var(--purple);"></i>
+                Home
+            </div>
+            <div class="tab" data-tab="notifications">
+                <i class="fas fa-bell submenu-icon" style="color: var(--green);"></i>
+                Notifications
+            </div>
+            <div class="tab" data-tab="orders">
+                <i class="fas fa-shopping-bag submenu-icon" style="color: var(--orange);"></i>
+                Submitted Orders
+            </div>
+            <div class="tab" data-tab="other-services">
+                <i class="fas fa-concierge-bell submenu-icon" style="color: var(--purple);"></i>
+                Other Services
+            </div>
+            <div class="tab" data-tab="developer">
+                <i class="fas fa-code submenu-icon" style="color: var(--dark-red);"></i>
+                Developer
+            </div>
+            <div class="tab" data-tab="admin">
+                <i class="fas fa-user-shield submenu-icon" style="color: var(--green);"></i>
+                Admin Panel
+            </div>
+            <div class="tab" data-tab="owner">
+                <i class="fas fa-crown submenu-icon" style="color: var(--orange);"></i>
+                Owner Panel
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Home Tab (Default View) -->
+            <div class="tab-content active" id="home-content">
+                <!-- Slideshow -->
+                <div class="slide-container mb-8">
+                    <div class="slides">
+                        <!-- Slides will be inserted here via JavaScript -->
+                    </div>
+                    <div class="slide-text">Best university products and services in UDOM</div>
+                </div>
+
+                <!-- Services Section Title -->
+                <div class="services-title-container mb-6">
+                    <h2 class="text-2xl font-bold" style="color: var(--purple);">ՏᗴᖇᐯIᑕᗴՏ</h2>
+                    <p class="text-lg font-semibold" style="color: var(--orange);">[ 𝐅𝐑𝐄𝐄 𝐃𝐄𝐋𝐈𝐕𝐄𝐑𝐘 ]</p>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="services-grid">
+                    <!-- Drawing Boards -->
+                    <div class="service-container">
+                        <div class="service-image">
+                            <div class="service-slides" data-service="drawing-boards">
+                                <!-- Service slides will be inserted here via JavaScript -->
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title">𝗗𝗥𝗔𝗪𝗜𝗡𝗚 𝗕𝗢𝗔𝗥𝗗𝗦:</div>
+                            <div class="service-items">
+                                ▪drawing boards<br>
+                                ▪2H & 4H pencils<br>
+                                ▪mechanical pencil<br>
+                                ▪30 & 45 degree set square<br>
+                                ▪360 degree protractor<br>
+                                ▪T-square<br>
+                                ▪Compass<br>
+                                ▪french curves
+                            </div>
+                            <div class="service-button" onclick="openOrderForm('Drawing Board')">SELECT</div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Services... -->
+
+                </div>
+
+                <!-- GET IN TOUCH Section -->
+                <div class="get-in-touch-container">
+                    <h2 class="text-2xl font-bold text-center mb-6" style="color: var(--purple);">GET IN TOUCH</h2>
+                    <div class="get-in-touch-form">
+                        <div class="form-group">
+                            <label class="form-label" for="contact-email">Email Address:</label>
+                            <input type="email" id="contact-email" class="form-input" placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="contact-message">Message:</label>
+                            <textarea id="contact-message" class="form-input" rows="5" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button id="send-email-button" class="send-email-button">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Contact Us Section -->
+                <div class="mt-10">
+                    <h2 class="text-2xl font-bold text-center mb-6" style="color: var(--purple);">ᑕOᑎTᗩᑕT ᑌՏ</h2>
+                    <div class="contact-container">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="text-center w-full">
+                                <div class="font-semibold">Email</div>
+                                <div class="contact-button">Chat</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="text-center w-full">
+                                <div class="font-semibold">Phone</div>
+                                <div class="contact-button">Chat</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="text-center w-full">
+                                <div class="font-semibold">WhatsApp</div>
+                                <div class="contact-button" onclick="openWhatsApp()">Chat</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Tabs... -->
+
+        </div>
+    </div>
+
+    <!-- Modals and Footers... -->
+
+    <footer class="footer">
+        <div class="container mx-auto">
+            <p>© 2025 𝐀𝐋𝐅𝐎𝐍𝐂𝐄 𝐒𝐄𝐑𝐕𝐈𝐂𝐄𝐒. All rights reserved.</p>
+            <p class="mt-2">Providing quality services to university students.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
